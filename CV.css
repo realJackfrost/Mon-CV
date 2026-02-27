@@ -1,0 +1,65 @@
+
+
+body {
+
+    display: grid;
+    background-color:rgb(224, 152, 58);
+    font-size: 17px;
+}
+
+hr {
+    display: none;
+    color: dark;
+}
+
+.droite {
+    padding: 1em;
+    display: grid;
+    /* background-color: aquamarine; */
+}
+
+.gauche {
+    padding: 1em;
+    display: grid;
+    background-color:#5e3a7a;
+    color: aliceblue;
+    border-color: #c6a15b;
+    border: 2px solid rgb(224, 152, 58);
+}
+
+.titreCV {
+    padding: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    
+    grid-column: 1/-1;
+    /* margin: 3em; */
+    background-color: antiquewhite;
+    /* grid-area: top; */
+    /* justify-content: center; */
+}
+
+main {
+    margin: 1.5em;
+    padding: 1.5em;
+
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 30% 60%;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.enveloppe ::before {
+    content: \f0e0;
+    font-family: Font Awesome 5 Free;
+}
+#section{
+    font-size: 19;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+a{
+    color:darkorange;
+
+}
