@@ -1,16 +1,11 @@
-
-
 body {
-
     display: grid;
-    background-color:rgb(224, 152, 58);
-    font-size: 17px;
+    background-color: rgb(224, 152, 58);
+    font-size: 19px;
+
 }
 
-hr {
-    display: none;
-    color: dark;
-}
+
 
 .droite {
     padding: 1em;
@@ -21,7 +16,7 @@ hr {
 .gauche {
     padding: 1em;
     display: grid;
-    background-color:#5e3a7a;
+    background-color: #5e3a7a;
     color: aliceblue;
     border-color: #c6a15b;
     border: 2px solid rgb(224, 152, 58);
@@ -31,35 +26,94 @@ hr {
     padding: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
-    
+
     grid-column: 1/-1;
     /* margin: 3em; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     /* grid-area: top; */
     /* justify-content: center; */
+    border: solid 3px rgb(224, 152, 58) ;
+    background-color: antiquewhite;
 }
 
 main {
     margin: 1.5em;
     padding: 1.5em;
-
     display: grid;
     grid-gap: 0.5em;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 35% 65%;
     background-color: antiquewhite;
     overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.enveloppe ::before {
-    content: \f0e0;
-    font-family: Font Awesome 5 Free;
+#enveloppe a::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: rgb(224, 152, 58);
 }
-#section{
-    font-size: 19;
-    font-family:  'Arial Narrow Bold', sans-serif;
+
+#git a::before {
+    content: "\f09b";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    margin-right: 8px;
+    color: rgb(224, 152, 58);
+}
+#adress::before {
+    content: "\f041";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600; 
+    margin-right: 8px;
+    color: rgb(224, 152, 58);
+}
+
+#enveloppe,
+#git {
+    align-items: center;
+}
+
+.section {
+    font-size: 25px;
+    font-family: 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
-}
-a{
-    color:darkorange;
+    /* color: black; */
+    border-bottom: 3px rgb(224, 152, 58) solid;
+    /* display: inline-block; */
+    width: fit-content;
+    padding-bottom: 2px;
 
+}
+
+a {
+    color: rgb(38, 204, 16);
+    font-weight: 900;
+}
+
+a:hover {
+    color: darkred;
+}
+
+h1,
+.prenom {
+    font-size: 40px;
+    ;
+}
+
+h1 {
+    font-size: 50px;
+}
+.Image {
+    text-align: center;  /* Centre l'image */
+    margin-bottom: 20px;
+}
+
+.Image {
+    width: 100px;        /* Largeur fixe */
+    height: 100px;       /* Hauteur fixe */
+    border-radius: 50%;  /* Rend l'image ronde */
+    object-fit: cover;   /* Évite la déformation */
+    border: 3px solid #c6a15b;  /* Bordure dorée */
 }
