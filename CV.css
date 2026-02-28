@@ -26,7 +26,7 @@ body {
     padding: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 35% 75%;
     grid-column: 1/-1;
     /* margin: 3em; */
     /* background-color: antiquewhite; */
